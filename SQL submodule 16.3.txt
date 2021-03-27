@@ -1,0 +1,81 @@
+create table ISSUESLISTS
+(
+ID	serial primary key,
+NAME	varchar(30) 
+);
+
+create table ISSUE
+(
+ID serial primary key,
+ISSUESLIST_ID bigint unsigned not null,
+SUMMARY varchar(300) charset utf8,
+DESCRIPTION varchar(1000) charset utf8,
+USER_ID_ASSIGNEDTO bigint unsigned not null,
+foreign key(ISSUESLIST_ID) references issueslists(ID),
+foreign key(USER_ID_ASSIGNEDTO) references users(ID)
+);
+
+insert into issueslists (name)
+values ("ToDo");
+
+insert into issueslists (name)
+values ("In progress");
+
+insert into issueslists (name)
+values ("Done");
+
+insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (1, "introducing", "introduce yourself", 1);
+ 
+ insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (1, "introducing", "introduce yourself", 2);
+
+insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (1, "introducing", "introduce yourself", 3);
+ 
+ insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (1, "introducing", "introduce yourself", 4);
+ 
+ insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (1, "introducing", "introduce yourself", 5);
+ 
+ insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (1, "introducing", "introduce yourself", 6);
+
+insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (2, "Mr. PostMAN", "send more than 10 post per week", 1);
+ 
+ insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (2, "Mr. PostMAN", "send more than 10 post per weekf", 2);
+
+insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (2, "Mr. PostMAN", "send more than 10 post per week", 3);
+ 
+ insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (2, "Mr. PostMAN", "send more than 10 post per week", 4);
+ 
+ insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (2, "Mr. PostMAN", "send more than 10 post per week", 5);
+ 
+ insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (2, "Mr. PostMAN", "send more than 10 post per week", 6);
+
+insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (3, "Complete the data", "Fill all the necessery information about your person", 1);
+
+insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (3, "Complete the data", "Fill all the necessery information about your person ", 2);
+
+insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (3, "Complete the data", "Fill all the necessery information about your person ", 3);
+ 
+ insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (3, "Complete the data", "Fill all the necessery information about your person ", 4);
+ 
+ insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (3, "Complete the data", "Fill all the necessery information about your person ", 5);
+ 
+ insert into issue (issueslist_id, summary, description, user_id_assignedto)
+ values (3, "Complete the data", "Fill all the necessery information about your person ", 6);
+
+commit;
