@@ -1,0 +1,23 @@
+{
+"carName": "Audi",
+"carModel": "A8",
+"seatsDescriber":[
+        "seat1":{
+        "material": "leather",
+        "colour": "black"
+        },
+        "seat2":{
+        "material": "leather",
+        "colour": "black"
+        },
+        "seat3":{
+        "material": "leather",
+        "colour": "black"
+        },
+        "seat4":{
+        "material": "leather",
+        "colour": "black"
+        }
+        ],
+"engineCapacity": 4196
+}
