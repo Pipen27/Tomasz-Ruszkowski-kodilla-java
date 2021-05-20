@@ -2,19 +2,19 @@
 "carName": "Audi",
 "carModel": "A8",
 "seats":[
-        0:{
+        {
         "material": "leather",
         "colour": "black"
         },
-        1:{
+        {
         "material": "leather",
         "colour": "black"
         },
-        2:{
+        {
         "material": "leather",
         "colour": "black"
         },
-        3:{
+        {
         "material": "leather",
         "colour": "black"
         }
